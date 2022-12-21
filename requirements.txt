@@ -1,4 +1,4 @@
 scrapetube
-pytube
+pytube3
 flask
 gunicorn
