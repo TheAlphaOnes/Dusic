@@ -5,9 +5,11 @@ def cleaner():
         temp = os.listdir("static\\temp")
         if len(temp) != 0 :
             print(True)
+        
             for file in temp:
-                os.remove("static\\temp\\"+ file)
-                time.sleep(.1)
+                if "m" != file:
+                     os.remove("static\\temp\\"+ file)
+                     time.sleep(.1)
 
         else:
             print(False)
