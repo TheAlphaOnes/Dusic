@@ -35,7 +35,8 @@ def player():
     #thumb = data['thumb']
     #audio = f"temp/{id}.mp3"
     #return render_template("player.html", name=name , artist=artist , thumb=thumb, audio=audio)
-    return render_template("player.html", name=name , artist=artist)
+    #return render_template("player.html", name=name , artist=artist)
+    return id+artist
 
 @app.route('/cls')
 def cls():
