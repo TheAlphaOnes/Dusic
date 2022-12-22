@@ -26,7 +26,7 @@ def search():
 def player():
     id = request.args.get('s')
     artist = request.args.get('a')
-    #data = tubedown.tubedata(id)
+    data = tubedown.tubedata(id)
     #yn = fileaval.file_avalable(id)
     #print(yn)
     #if False == yn:
@@ -36,7 +36,7 @@ def player():
     #audio = f"temp/{id}.mp3"
     #return render_template("player.html", name=name , artist=artist , thumb=thumb, audio=audio)
     #return render_template("player.html", name=name , artist=artist)
-    return id+artist
+    return data
 
 @app.route('/cls')
 def cls():
