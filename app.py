@@ -29,8 +29,8 @@ def player():
     data = tubedown.tubedata(id)
     yn = fileaval.file_avalable(id)
     print(yn)
-    if False == yn:
-        tubedown.youtubedownload(id)
+    #if False == yn:
+        #tubedown.youtubedownload(id)
     name = data["title"]
     thumb = data['thumb']
     audio = f"temp/{id}.mp3"
