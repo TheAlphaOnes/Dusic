@@ -1,4 +1,0 @@
-scrapetube
-pytube3
-flask
-gunicorn
